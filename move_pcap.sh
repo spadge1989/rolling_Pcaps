@@ -2,7 +2,7 @@
 
 echo Cleanup
 
-DIR="/media/clancon/diskAshur Pro2/fpc"
+DIR="/path/to/external/hard/drive"
 CAPACITY_LIMIT=95
 if [ "$DIR" == "" ]
 then 
@@ -42,5 +42,5 @@ then
 	done
 fi
 
-find /pcaps/ -name '*' -type f -amin +10 -exec mv {} /media/clancon/diskAshur\ Pro2/fpc/ \;
+find /pcaps/ -name '*' -type f -amin +10 -exec mv {} $DIR \;
 
