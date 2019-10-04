@@ -2,7 +2,7 @@
 Description=FPC Service
 
 [Service]
-ExecStart=/nsm/scripts/start_pcap_final.sh
+ExecStart=/scripts/start_pcap_final.sh
 
 [Install]
 WantedBy=multi-user.target
